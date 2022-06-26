@@ -1,0 +1,13 @@
+poner en el router las paginas que quiero redireccionar en el nav
+import Multiplechoise from './components/Multiplechoise.vue'
+
+export const router = new VueRouter({
+    mode: 'history',
+    routes: [
+        /* { path: '/', component: Binding }, */
+        { path: '/', redirect: '/formulario' },
+        { path: '/formulario', component:Formulario },
+        { path: '/Multiplechoise', component:Multiplechoise },
+    
+    ]
+})
